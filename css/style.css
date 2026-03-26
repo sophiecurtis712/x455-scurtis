@@ -1,0 +1,438 @@
+/* MY PERSONAL STYLESHEET */
+
+/* BODY */
+
+body {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 400;
+  background-color: #f8f5f0;
+}
+
+/* HEADERS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+}
+
+/* LOGO */
+
+.logo {
+  font-family: "Ultra", serif;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #8fae5a;
+  text-decoration: none;
+}
+
+/* NAV BAR */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background-color: #f8f5f0;
+}
+
+/* Navigation bar links */
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  margin-left: 650px;
+}
+
+.nav-links a {
+  font-family: "Sulphur Point", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* hover color for nav links */
+.nav-links a:hover {
+  color: #8fae5a;
+}
+
+/* NAV ICONS (search and cart) */
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.material-symbols-outlined {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* HERO IMAGE homepage */
+
+.hero-img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  display: block;
+}
+
+/* WELCOME SECTION */
+
+.welcome-section {
+  max-width: 900px;
+  margin: 80px auto 80px 300px;
+  text-align: left;
+  padding: 0 80px;
+}
+
+.welcome-section h1 {
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/*welcome button*/
+
+.welcome-button {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 315px;
+  padding: 12px 28px;
+  background-color: #afc2e1;
+  color: black;
+  text-decoration: none;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+/*hover color welcome button*/
+
+.welcome-button:hover {
+  background-color: #8fae5a;
+}
+
+/* MY ICONS/LINKS ROW ON HOMEPAGE (bird, binos, bridge) */
+
+.myicon-row {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 80px 0;
+}
+
+/* icon boxes (my icon images) */
+
+.icon-box {
+  text-align: center;
+}
+
+/* icon images */
+
+.icon-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Buttons under myicons */
+
+.myicon-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #afc2e1;
+  color: black;
+  text-decoration: none;
+  font-family: "Sulphur Point", sans-serif;
+  border-radius: 2px;
+}
+
+/* hover color for icon buttons */
+
+.myicon-button:hover {
+  background-color: #8fae5a;
+}
+
+/* FOOTER */
+.custom-footer {
+  background-color: #8fae5a;
+  color: white;
+  padding: 40px 60px;
+}
+
+/* footer layout */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer text */
+
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* footer image */
+
+.footer-image img {
+  width: 300px;
+  height: auto;
+}
+
+/* EXPLORE PAGE STYLES */
+
+/* HERO BLUE BLOCK */
+
+.hero-blueblock {
+  background-color: #afc2e1;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* hero image on explore page */
+.explore-hero-image {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: 150px;
+}
+
+/* explore page title */
+.explore-title {
+  position: absolute;
+  top: 120px;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+/* explore page text */
+.explore-text {
+  max-width: 400px;
+  margin: 150px 220px 50px auto;
+}
+
+.explore-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* scrolling box for explore page locations */
+.my-scrolling {
+  max-height: 600px;
+  overflow: auto;
+  padding: 20px;
+  margin: 40px 0 40px 300px;
+  width: 500px;
+
+  background-color: #afc2e1;
+  border-radius: 2px;
+}
+
+/* image carousel for explore page */
+.carousel {
+  max-width: 600px;
+  margin: 100px 300px 100px auto;
+}
+
+.mySlides {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: none;
+}
+
+/* LEARN PAGE STYLES */
+
+/* hero blue block for learn page */
+.learn-hero-blueblock {
+  background-color: #afc2e1;
+  padding: 150px 0 80px 0;
+  position: relative;
+  height: 900px;
+}
+
+/* learn page title */
+.learn-title {
+  text-align: center;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+/* learn page text */
+.learn-text1,
+.learn-text2 {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.learn-text2 {
+  margin-top: 200px;
+}
+
+.learn-text1 p,
+.learn-text2 p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* images embedded in learn page text */
+.learn-img-left {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.learn-img-right {
+  width: 300px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+/* keeps layout from breaking */
+.learn-text1::after,
+.learn-text2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* learn page hyperlink to merlin website */
+.learn-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #8fae5a;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.learn-link:hover {
+  text-decoration: underline;
+}
+
+/* link to birds page and how to use binoculars section */
+
+.binoculars-section {
+  text-align: center;
+  margin: 150px 0 40px 0;
+}
+
+.binoculars-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.binoculars-image {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+.birds-image {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+/* binoculars step box */
+
+.binoculars-steps {
+  background-color: #afc2e1;
+  max-width: 600px;
+  margin: 10px auto 10px auto;
+  padding: 30px 40px;
+  border-radius: 2px;
+}
+
+/* binos numbered list */
+
+.binoculars-steps ol {
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* binos list items */
+
+.binoculars-steps li {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* birding identification questions section */
+
+.questions-section {
+  background-color: #afc2e1;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.questions-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.questions-list {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.questions-list li {
+  margin-bottom: 10px;
+}
+
+/* bottom image learn page */
+
+.learn-bottom-image {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+.learn-bottom-image img {
+  width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
