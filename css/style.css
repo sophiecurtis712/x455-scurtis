@@ -60,7 +60,7 @@ h6 {
   color: #8fae5a;
 }
 
-/* NAV ICONS (search and cart) */
+/* Nav icons (search and cart) */
 
 .nav-icons {
   display: flex;
@@ -72,7 +72,7 @@ h6 {
   cursor: pointer;
 }
 
-/* HERO IMAGE homepage */
+/* Hero image on homepage */
 
 .hero-img {
   width: 100%;
