@@ -1,15 +1,12 @@
 /* MY PERSONAL STYLESHEET */
 
 /* BODY */
-
 body {
   font-family: "Sulphur Point", sans-serif;
-  font-weight: 400;
   background-color: #f8f5f0;
 }
 
 /* HEADERS */
-
 h1,
 h2,
 h3,
@@ -17,11 +14,10 @@ h4,
 h5,
 h6 {
   font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 /* LOGO */
-
 .logo {
   font-family: "Ultra", serif;
   font-size: 36px;
@@ -30,8 +26,7 @@ h6 {
   text-decoration: none;
 }
 
-/* NAV BAR */
-
+/* NAV BAR STYLES*/
 .navbar {
   display: flex;
   align-items: center;
@@ -40,8 +35,7 @@ h6 {
   background-color: #f8f5f0;
 }
 
-/* Navigation bar links */
-
+/* navigation bar links */
 .nav-links {
   display: flex;
   gap: 35px;
@@ -60,8 +54,7 @@ h6 {
   color: #8fae5a;
 }
 
-/* Nav icons (search and cart) */
-
+/* nav icons (search and cart) */
 .nav-icons {
   display: flex;
   gap: 20px;
@@ -72,8 +65,40 @@ h6 {
   cursor: pointer;
 }
 
-/* Hero image on homepage */
+/* FOOTER STYLES*/
 
+.custom-footer {
+  background-color: #8fae5a;
+  color: white;
+  padding: 40px 60px;
+}
+
+/* footer layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* footer text */
+.footer-text p {
+  margin: 5px 0;
+}
+
+.footer-links {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* footer image */
+.footer-image img {
+  width: 300px;
+  height: auto;
+}
+
+/* HOMEPAGE STYLES*/
+
+/* hero image on homepage */
 .hero-img {
   width: 100%;
   height: 1000px;
@@ -81,8 +106,7 @@ h6 {
   display: block;
 }
 
-/* WELCOME SECTION */
-
+/* welcome section */
 .welcome-section {
   max-width: 900px;
   margin: 80px auto 80px 300px;
@@ -100,7 +124,6 @@ h6 {
 }
 
 /*welcome button*/
-
 .welcome-button {
   display: inline-block;
   margin-top: 30px;
@@ -115,13 +138,11 @@ h6 {
 }
 
 /*hover color welcome button*/
-
 .welcome-button:hover {
   background-color: #8fae5a;
 }
 
-/* MY ICONS/LINKS ROW ON HOMEPAGE (bird, binos, bridge) */
-
+/* my icons on homepage (bird, binos, bridge) */
 .myicon-row {
   display: flex;
   justify-content: center;
@@ -130,13 +151,11 @@ h6 {
 }
 
 /* icon boxes (my icon images) */
-
 .icon-box {
   text-align: center;
 }
 
 /* icon images */
-
 .icon-box img {
   width: 150px;
   height: 150px;
@@ -144,8 +163,7 @@ h6 {
   display: block;
 }
 
-/* Buttons under myicons */
-
+/* buttons under myicons */
 .myicon-button {
   display: inline-block;
   margin-top: 15px;
@@ -158,48 +176,13 @@ h6 {
 }
 
 /* hover color for icon buttons */
-
 .myicon-button:hover {
   background-color: #8fae5a;
 }
 
-/* FOOTER */
-.custom-footer {
-  background-color: #8fae5a;
-  color: white;
-  padding: 40px 60px;
-}
-
-/* footer layout */
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* footer text */
-
-.footer-text p {
-  margin: 5px 0;
-}
-
-.footer-links {
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-/* footer image */
-
-.footer-image img {
-  width: 300px;
-  height: auto;
-}
-
 /* EXPLORE PAGE STYLES */
 
-/* HERO BLUE BLOCK */
-
+/* hero blue block */
 .hero-blueblock {
   background-color: #afc2e1;
   height: 900px;
@@ -318,7 +301,7 @@ h6 {
   border-radius: 50%;
 }
 
-/* keeps layout from breaking */
+/* keeps layout from breaking w clearfix */
 .learn-text1::after,
 .learn-text2::after {
   content: "";
@@ -341,15 +324,14 @@ h6 {
   text-decoration: underline;
 }
 
-/* link to birds page and how to use binoculars section */
-
+/* how to use binoculars section */
 .binoculars-section {
   text-align: center;
   margin: 150px 0 40px 0;
 }
 
 .binoculars-title {
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
@@ -361,15 +343,7 @@ h6 {
   margin: 0 auto 5px auto;
 }
 
-.birds-image {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 5px auto;
-}
-
-/* binoculars step box */
-
+/* binoculars step box and list */
 .binoculars-steps {
   background-color: #afc2e1;
   max-width: 600px;
@@ -378,14 +352,10 @@ h6 {
   border-radius: 2px;
 }
 
-/* binos numbered list */
-
 .binoculars-steps ol {
   padding-left: 20px;
   text-align: left;
 }
-
-/* binos list items */
 
 .binoculars-steps li {
   font-size: 17px;
@@ -393,8 +363,37 @@ h6 {
   margin-bottom: 12px;
 }
 
-/* birding identification questions section */
+/* link to birds page section */
+.birds-image {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 5px auto;
+}
 
+.bird-box {
+  text-align: center;
+  margin: 50px 0px 80px 0px;
+  padding: 0 80px;
+}
+
+.bird-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 28px;
+  background-color: #afc2e1;
+  color: black;
+  text-decoration: none;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+.bird-button:hover {
+  background-color: #8fae5a;
+}
+
+/* birding identification questions section */
 .questions-section {
   background-color: #afc2e1;
   max-width: 600px;
@@ -424,9 +423,7 @@ h6 {
 }
 
 /* bottom image learn page */
-
 .learn-bottom-image {
-  text-align: center;
   margin: 40px 0 0 0;
 }
 
@@ -435,4 +432,94 @@ h6 {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+/* BIRDS PAGE STYLES */
+
+.hero-blueblockbirds {
+  background-color: #afc2e1;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* hero image on birds page */
+.birds-hero-image {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  top: 500px;
+  margin: auto 0px 0px 350px;
+}
+
+/* explore page title */
+.birds-title {
+  position: absolute;
+  top: 120px;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+/* explore page text */
+.birds-text {
+  max-width: 800px;
+  position: absolute;
+  top: 200px;
+}
+
+.birds-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.bird-table-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  margin-top: 350px;
+  text-align: center;
+}
+
+/* bird table */
+.bird-table,
+.bird-table-all {
+  margin: 50px auto 100px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  display: table;
+}
+
+.bird-table-header {
+  width: 80%;
+  margin: 50px auto;
+  border-collapse: collapse;
+}
+
+.bird-table-header th,
+.bird-table-header td {
+  border: 2px solid #f8f5f0;
+  padding: 12px;
+  text-align: left;
+}
+.bird-table-header th {
+  background-color: #8fae5a;
+  font-weight: bold;
+}
+
+.bird-table-header td {
+  background-color: #cfddf5;
+}
+
+.bird-table-header td:hover {
+  background-color: #afc2e1;
+}
+
+.bird-table-header th:hover {
+  background-color: #8fae5a;
+  color: white;
 }

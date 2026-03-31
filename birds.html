@@ -39,17 +39,83 @@
   </div>
 </header>
 
-<table>
-  <thead>
-    <tr>
-      <th>type/group</th>
-      <th>species</th>
-      <th>scientific name</th>
-      <th>habitat</th>
-      <th>locations</th>
-    </tr>
-  </thead>
-</table>
+<!-- blue block background and birds page text -->
+<header class="hero-blueblockbirds">
+  <h1 class="birds-title">BIRDS</h1>
+  <main class="birds-text">
+  <p>
+    Our Bird Species pages celebrate the rich birdlife of San Francisco, from coastal shorebirds to park-dwelling songbirds and backyard regulars. Each profile includes quick identification tips, seasonal presence in the city, and the best local places to spot them — along with a curated playlist the bird might love, a poem that captures its personality, and videos that bring its behavior to life. It’s part field guide, part art project, and all about deepening your connection to the wild birds that share our city.
+  </p>
+</main>
+</header>
+
+<!-- birds page hero image -->
+<div>
+  <img src="images/Birds/birdshero.png" class="birds-hero-image">
+</div>
+
+<!-- birds page table title -->
+<div>
+  <h2 class="bird-table-title">bird species in San Francisco</h2>
+</div>
+
+<!-- birds table -->
+ <table id="myTable" class="bird-table-all">
+            <thead>
+              <tr class="bird-table-header">
+                <th>IMAGE</th>
+                <th>SPECIES</th>
+                <th>TYPE/GROUP</th>
+                <th>SCIENTIFIC NAME</th>
+                <th>HABITAT</th>
+                <th>LOCATIONS</th>
+              </tr>
+            </thead>
+            <tr class="bird-table-header">
+              <td><img src="./img/skillet-03.jpeg" style="width: 120px" /></td>
+              <td>Anna's Hummingbird</td>
+              <td>Calypte anna</td>
+              <td>urban & park</td>
+              <td>Urban gardens, parks, coastal scrub, and residential neighborhoods</td>
+              <td>Golden Gate Park, the Presidio, Crissy Field, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+            </tr>
+            <tr class="bird-table-header">
+              <td>
+                <img src="./img/wooden-spoons-01.jpeg" style="width: 120px" />
+              </td>
+              <td>Dark-eyed Junco</td>
+              <td>Junco hyemalis</td>
+              <td>urban & park</td>
+              <td>Urban gardens, parks, and residential neighborhoods</td>
+              <td>Golden Gate Park, the Presidio, Crissy Field, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+            </tr>
+            <tr class="bird-table-header">
+              <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+              <td>Western Gull</td>
+              <td>Larus occidentalis</td>
+              <td>coastal & waterfront</td>
+              <td>Coastal areas, beaches, and marine environments</td>
+              <td>Golden Gate Park, the Presidio, Crissy Field, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+            </tr>
+            <tr class="bird-table-header">
+              <td>
+                <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+              </td>
+              <td>Great Blue Heron</td>
+              <td>Ardea herodias</td>
+              <td>coastal & wetland</td>
+              <td>Coastal areas, wetlands, and marshes</td>
+              <td>Golden Gate Park, the Presidio, Crissy Field, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+            </tr>
+            <tr class="bird-table-header">
+              <td><img src="./img/colander-01.jpeg" style="width: 120px" /></td>
+              <td>yellow-rumped warbler</td>
+              <td>Setophaga petechia</td>
+              <td>urban & park</td>
+              <td>Urban gardens, parks, and residential neighborhoods</td>
+              <td>Golden Gate Park, the Presidio, Crissy Field, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+            </tr>
+          </table>
 
  <!-- Footer -->
 <footer class="custom-footer">
@@ -70,5 +136,32 @@
   </div>
 
 </footer>
+
+<!-- jQuery and tablesorter scripts for birds table -->
+ 
+      
+      <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
+
+    <script>
+      // sortable table begin
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [
+            [2, 1],
+          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+      // sortable table end
+    </script>
+
 </body>
 </html>
