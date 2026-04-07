@@ -616,22 +616,65 @@ h6 {
 }
 
 /* bird profile accordion buttons */
-.my-accordion {
-  width: 400px;
-  padding: 12px 20px;
-  background-color: #afc2e1;
-  color: black;
-  text-decoration: none;
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 18px;
-  border-radius: 2px;
-  margin: 20px auto;
-  display: block;
-  text-align: left;
+
+/* w3.css styles for accordion (override) */
+
+.w3-brown {
+  background-color: #afc2e1 !important;
+  color: black !important;
 }
 
-/* accordion button hover */
-#accordionBtn1:hover,
-#accordionBtn2:hover {
-  background-color: blanchedalmond !important;
+.w3-orange {
+  background-color: #8fae5a !important;
+  color: black !important;
+}
+
+/* custom styles for accordion buttons and content */
+.accordion-container {
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.accordion-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  font-family: "Sulphur Point", sans-serif;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-content {
+  padding: 15px;
+  background-color: #f8f5f0;
+  font-size: 18px;
+}
+
+.accordion-button:hover {
+  background-color: #8fae5a;
+  color: white;
+}
+
+/* personality of the bird section */
+
+.birdprofile-personality-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.birdprofile-personality {
+  max-width: 600px;
+  position: relative;
+  margin: 25px 0px 50px 450px;
+  text-align: center;
+}
+
+.birdprofile-personality p {
+  font-size: 18px;
+  line-height: 1.6;
 }
