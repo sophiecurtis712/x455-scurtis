@@ -39,10 +39,104 @@
   </div>
 </header>
 
+<!-- blue block background and title/subtitle -->
+<header class="hero-blueblock-locationprofile">
+  <h1 class="locationprofile-title">LOCATION PROFILE:</h1>
+  <h2 class="locationprofile-subtitle">Crissy Field</h2>
+</header>
+
+  <!-- Location profile hero image -->
+    <img src="images/Location-Profiles/Crissy-Field/CrissyFieldHero.png" class="locationprofile-hero-image" alt="Location Profile Hero Image">
+
+<!-- Location profile main text -->
+  <main class="locationprofile-maintext">
+  <p>
+    Crissy Field is one of the best and most accessible birding spots in San Francisco, where restored tidal marsh meets sandy beach along the Golden Gate. Its mix of lagoon, shoreline, open water, and grassy areas attracts a wide variety of birds year-round, from shorebirds and waterfowl to raptors and seabirds.
+  </p>
+  <p>
+Birders can spot species like Brown Pelican gliding over the Bay, Western Gull along the beach, and waders such as Great Blue Heron hunting in the marsh. Migration seasons—especially fall and spring—bring even more diversity, making it a reliable and scenic destination for both beginners and experienced birders.
+  </p>
+</main>
+
+<!-- subtitle for bird gallery -->
+<div class="locationprofile-subtitle2">
+  <h3>common birds at Crissy Field</h3>
+</div>
+
+<!-- Bird lightbox gallery-->
+<div class="locationprofile-bird-gallery">
+  <img src="images/Location-Profiles/Crissy-Field/BrownPelican.png" class="gallery-image hover-shadow cursor" alt="Brown Pelican" onclick="openModal();currentSlide(1)">
+  <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png" class="gallery-image hover-shadow cursor" alt="Great Blue Heron" onclick="openModal();currentSlide(2)">
+  <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png" class="gallery-image hover-shadow cursor" alt="California Gull" onclick="openModal();currentSlide(3)">
+  <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png" class="gallery-image hover-shadow cursor" alt="Anna's Hummingbird" onclick="openModal();currentSlide(4)">
+  <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png" class="gallery-image hover-shadow cursor" alt="Double-Crested Cormorant" onclick="openModal();currentSlide(5)">
+  <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png" class="gallery-image hover-shadow cursor" alt="Belted Kingfisher" onclick="openModal();currentSlide(6)">
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/BrownPelican-big.png">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png">
+    </div>
+
+      <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png">
+    </div>
+
+      <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
 
 
-
-
+<div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/BrownPelican-sm.png" style="width: 33%;" onclick="currentSlide(1)" alt="Brown Pelican">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/GreatBlueHeron-sm.png" style="width: 33%;" onclick="currentSlide(2)" alt="Great Blue Heron">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/CaliforniaGull-sm.png" style="width: 33%;" onclick="currentSlide(3)" alt="California Gull">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/AnnasHummingbird-sm.png" style="width: 33%;" onclick="currentSlide(4)" alt="Anna's Hummingbird">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant-sm.png" style="width: 33%;" onclick="currentSlide(5)" alt="Double-Crested Cormorant">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/BeltedKingfisher-sm.png" style="width: 33%;" onclick="currentSlide(6)" alt="Belted Kingfisher">
+    </div>
+  </div>
+</div>
 
  <!-- Footer -->
 <footer class="custom-footer">
@@ -63,5 +157,45 @@
   </div>
 
 </footer>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
 </body>
 </html>

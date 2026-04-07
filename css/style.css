@@ -696,3 +696,232 @@ h6 {
   padding: 20px;
   margin-bottom: 50px;
 }
+
+/* LOCATION PROFILE PAGE 1: CRISSY FIELD STYLES */
+
+/* hero blue block location profile */
+.hero-blueblock-locationprofile {
+  background-color: #afc2e1;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* hero image on location profile page */
+.locationprofile-hero-image {
+  width: 900px;
+  height: auto;
+  position: absolute;
+  margin: auto 0px 0px 300px;
+  top: 300px;
+}
+
+/* location profile page title/subtitle */
+.locationprofile-title {
+  position: absolute;
+  top: 120px;
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.locationprofile-subtitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: absolute;
+  top: 160px;
+}
+
+/* location profile page text */
+.locationprofile-maintext {
+  max-width: 500px;
+  margin: 150px auto 50px 300px;
+  position: relative;
+  font-size: 18px;
+}
+
+.locationprofile-subtitle2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+}
+
+/* location profile page bird image gallery */
+.locationprofile-bird-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px auto;
+  max-width: 800px;
+}
+
+.gallery-image {
+  width: 250px;
+  height: auto;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* w3 lightbox styles */
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #8fae5a;
+  background-color: rgba(143, 174, 90, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: none;
+  margin: auto 300px auto 500px;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #afc2e1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  display: block;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-right: 600px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #afc2e1;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin: auto 500px;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #afc2e1;
+  padding: 10px;
+  color: white;
+  margin: 100px 650px 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow:
+    0 8px 8px 0 #afc2e1,
+    0 10px 20px 0 #afc2e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: none;
+  width: 30%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 150px 10px 100px 130px;
+}
