@@ -851,7 +851,7 @@ h6 {
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* hover */
 .prev:hover,
 .next:hover {
   background-color: #afc2e1;
@@ -924,4 +924,30 @@ img.hover-shadow {
   justify-content: center;
   gap: 10px;
   margin: 150px 10px 100px 130px;
+}
+
+/* location history section */
+.location-history-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.location-history-blue-block {
+  background-color: #afc2e1;
+  max-width: 900px;
+  margin: 15px auto 50px auto;
+  text-align: left;
+  padding: 50px 50px;
+}
+
+.location-history-text {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.location-history-blue-block p {
+  margin: 0;
 }
