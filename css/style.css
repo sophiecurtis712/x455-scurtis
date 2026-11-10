@@ -26,6 +26,12 @@ h6 {
   text-decoration: none;
 }
 
+.logo-small {
+  font-size: 0.5em; /* This makes it exactly half the size of PERCH */
+  text-transform: lowercase; /* Optional: keeps "the" lowercase */
+  vertical-align: middle; /* Optional: aligns it nicely with the larger text */
+}
+
 /* NAV BAR STYLES*/
 .navbar {
   display: flex;
@@ -40,6 +46,7 @@ h6 {
   display: flex;
   gap: 35px;
   margin-left: 650px;
+  transform: translateY(20px);
 }
 
 .nav-links a {
