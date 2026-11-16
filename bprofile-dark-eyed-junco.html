@@ -1,241 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Perch SF</title>
+<title>Dark-eyed Junco | The Perch SF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/w3.css">
 <link rel="stylesheet" href="css/style.css">
-
-<!-- google fonts links  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
-<!-- font awesome link for accordion icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-<!-- font awesome icons link -->
+<!-- font awesome 4.7 for the accordion carets, 6.0 for the social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
-
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- THIS IS BIRD PROFILE PAGE 1 (Dark-eyed Junco) -->
 <header class="w3-top">
   <div class="navbar">
-
-  <a href="index.html" class="logo">
-  <img src="images/Header/Perch-Logo-Header.png" alt="the PERCH logo" style="height: 40px; width: auto;">
-</a>
-
-    <!-- learn and explore pages linked, no about page linked -->
+    <a href="index.html" class="logo"><img src="images/Header/Perch-Logo-Header.png" alt="the PERCH logo"></a>
     <div class="nav-links">
       <a href="about-us.html">about Us</a>
       <a href="learn.html">learn</a>
       <a href="explore.html">explore</a>
     </div>
+  </div>
+</header>
 
-    <!-- <div class="nav-icons">
-      <span class="material-symbols-outlined">search</span>
-      <span class="material-symbols-outlined">shopping_cart</span>
+<section class="hero hero-exact">
+  <h1 class="page-title">BIRD PROFILE:</h1>
+  <h2 class="page-subtitle">Dark-eyed Junco</h2>
+  <img src="images/Bird-Profiles/Dark-Eyed-Junco/Juncohero.png" class="hero-image" style="width:600px" alt="Dark-eyed Junco">
+</section>
+
+<section class="section">
+  <div class="container grid">
+    <div class="col-img-left">
+      <img src="images/Bird-Profiles/Dark-Eyed-Junco/junco2.png" style="width:100%" alt="Dark-eyed Junco">
     </div>
-  -->
+    <div class="col-text-right">
+      <p>Dark-eyed Junco is a small, slate-gray songbird with a crisp white belly and a flashing white outer tail that’s easy to spot in flight. Common in San Francisco’s parks and gardens—especially in fall and winter—it often hops along the ground in search of seeds, giving soft ticking calls as it moves.</p>
+    </div>
   </div>
-</header>
+</section>
 
-
-<!-- THIS IS THE BIRD PROFILE PAGE 1 (Dark-eyed Junco) -->
-
-<!-- blue block background and hero image -->
-<header class="hero-blueblock-birdprofile">
-  <h1 class="birdprofile-title">BIRD PROFILE:</h1>
-  <h2 class="birdprofile-subtitle">Dark-eyed Junco</h2>
-</header>
-
-<div>
-    <img src="images/Bird-Profiles/Dark-Eyed-Junco/junco2.png" class="birdprofile-hero-image">
-</div>
-
-<!-- Bird profile text -->
-<main class="birdprofile-text">
-  <p>
-    Dark-eyed Junco is a small, slate-gray songbird with a crisp white belly and a flashing white outer tail that’s easy to spot in flight. Common in San Francisco’s parks and gardens—especially in fall and winter—it often hops along the ground in search of seeds, giving soft ticking calls as it moves.
-  </p>
-</main>
-
-<br>
-
-<div class="birdprofile-personality-title">
-  <h4>personality of Dark-eyed Juncos</h4>
-</div>
-
-<div class="birdprofile-personality">
-  <p>
-    Dark-eyed Juncos are known for their gentle, curious nature and are often seen in small groups. They are active and social birds, especially during the non-breeding season when they form flocks. These birds are also recognized for their distinctive white outer tail feathers that flash during flight, making them easy to identify in the wild.
-  </p>
-</div>
-
-<br>
-
-<!-- Accordion for bird identification and habitat -->
-
-<div class ="accordion-container">
-              <button onclick="myAccordion('accordion1')"class="accordion-button w3-brown"id="accordionBtn1">
-                bird identification <i class="fa fa-caret-down"></i></button>
-
-              <div
-                id="accordion1"
-                class="accordion-content w3-hide">
-                <p>
-                  Dark-eyed Juncos are small, sparrow-sized birds (approx. 6 inches) often called "snowbirds" for their gray, brown, and white plumage. Key identifiers include a dark gray or brownish "hood" contrasting with a white belly, a distinct pinkish-white bill, and prominent white outer tail feathers that flash during flight.
-                </p>
-                <img src="images/Bird-Profiles/Dark-Eyed-Junco/junco-identification.png" alt="Dark-eyed Junco Identification" class="accordion-image" style="height: 300px; width: auto; margin: auto auto auto 150px;">
-              </div>
-
-              <button onclick="myAccordion('accordion2')"class="accordion-button w3-brown"id="accordionBtn2">
-              habitat in SF <i class="fa fa-caret-down"></i>
-              </button>
-
-              <div 
-            id = "accordion2" class="accordion-content w3-hide">
-                <p>
-                Dark-eyed Juncos are common, year-round residents in San Francisco, particularly abundant in fall and winter. They inhabit varied environments including the Presidio's forests, coastal scrub, and annual grasslands, as well as landscaped lawns, parks, and residential neighborhoods. They are often found hopping on the ground or in low, brushy areas.
-                </p>
-              </div>
-
-              <button onclick="myAccordion('accordion3')"class="accordion-button w3-brown"id="accordionBtn3">
-              behavior <i class="fa fa-caret-down"></i>
-              </button>
-
-              <div 
-            id = "accordion3" class="accordion-content w3-hide">
-                <p>
-                  Dark-eyed Juncos are ground foragers, often seen hopping and scratching in leaf litter for seeds. They are social birds, frequently forming flocks outside of breeding season. During court
-                </p>
-              </div>
-
-            <button onclick="myAccordion('accordion4')"class="accordion-button w3-brown"id="accordionBtn4">
-              diet <i class="fa fa-caret-down"></i>
-              </button>
-
-              <div 
-            id = "accordion4" class="accordion-content w3-hide">
-                <p>
-                  Dark-eyed Juncos primarily eat seeds, especially in fall and winter, foraging on the ground for grass seeds, weed
-                </p>
-              </div>
-
-              <button onclick="myAccordion('accordion5')"class="accordion-button w3-brown"id="accordionBtn5">
-              fun facts <i class="fa fa-caret-down"></i>
-              </button>
-
-              <div 
-            id = "accordion5" class="accordion-content w3-hide">
-                <p>
-                  Dark-eyed Juncos are often called "snowbirds" because they are commonly seen in snowy conditions. They have a distinctive "white flash" on their tail that is visible when they fly, which helps birdwatchers identify them. During courtship
-                </p>
-              </div>
-</div>
-
-
-<div class="birdprofile-video-title">
-  <h4>videos of Dark-eyed Juncos</h4>
-</div>
-<div class="birdprofile-video">
-  <div style="width: 30%; word-wrap: break-word;"
-  <h2>from the California Academy of Sciences</h2>
-  <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/W_u7PuRV-SA?si=dugw77VFiRxccr4M" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="autoplay; encrypted-media" 
-  allowfullscreen>
-</iframe>
+<section class="section" style="padding-top:0">
+  <div class="container grid">
+    <div class="col-center-text" style="text-align:left">
+      <h4 class="section-title" style="text-align:center">personality of Dark-eyed Juncos</h4>
+      <p>Dark-eyed Juncos are known for their gentle, curious nature and are often seen in small groups. They are active and social birds, especially during the non-breeding season when they form flocks. These birds are also recognized for their distinctive white outer tail feathers that flash during flight, making them easy to identify in the wild.</p>
+    </div>
   </div>
+</section>
 
-  <div style="width: 30%; word-wrap: break-word;"
-  <h2>from the Macaulay Library at the Cornell Lab of Ornithology</h2>
-  <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/fBR0WPfanLs?si=8_wRzirmAE7ppiRU" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="autoplay; encrypted-media" 
-  allowfullscreen>
-</iframe>
-  </div> 
-
-  <div style="width: 30%; word-wrap: break-word;"
-  <h2>from Birds Walking Down</h2>
-  <iframe 
-  width="100%" 
-  height="315" 
-  src="https://www.youtube.com/embed/W7vT0uda3mI?si=2TEMhbVq4p0MlELJ" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="autoplay; encrypted-media" 
-  allowfullscreen>
-</iframe>
-  </div>
-</div>
-
- <!-- Footer -->
-<footer class="custom-footer">
-
-  <div class="footer-content">
-    
-    <div class="footer-text">
-      <p>© 2026 The Perch. All rights reserved.</p>
-      <p class="footer-links">Privacy Policy | Terms of Use</p>
-      <br>
-      <p> contact us at infobird@theperchsf.com</p>
-                  <br>
-      <p>Follow us on social media:</p>
-            <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
+<section class="section" style="padding-top:0">
+  <div class="container grid">
+    <div class="col-center-text">
+      <div class="accordion-container">
+        <button type="button" onclick="myAccordion('accordion1')" class="accordion-button w3-brown" id="accordionBtn1">bird identification <i class="fa fa-caret-down"></i></button>
+        <div id="accordion1" class="accordion-content w3-hide">
+          <p>Dark-eyed Juncos are small, sparrow-sized birds (approx. 6 inches) often called "snowbirds" for their gray, brown, and white plumage. Key identifiers include a dark gray or brownish "hood" contrasting with a white belly, a distinct pinkish-white bill, and prominent white outer tail feathers that flash during flight.</p>
+          <img src="images/Bird-Profiles/Dark-Eyed-Junco/junco-identification.png" alt="Dark-eyed Junco identification diagram" class="accordion-image">
+        </div>
+        <button type="button" onclick="myAccordion('accordion2')" class="accordion-button w3-brown" id="accordionBtn2">habitat in SF <i class="fa fa-caret-down"></i></button>
+        <div id="accordion2" class="accordion-content w3-hide">
+          <p>Dark-eyed Juncos are common, year-round residents in San Francisco, particularly abundant in fall and winter. They inhabit varied environments including the Presidio's forests, coastal scrub, and annual grasslands, as well as landscaped lawns, parks, and residential neighborhoods. They are often found hopping on the ground or in low, brushy areas.</p>
+        </div>
+        <button type="button" onclick="myAccordion('accordion3')" class="accordion-button w3-brown" id="accordionBtn3">behavior <i class="fa fa-caret-down"></i></button>
+        <div id="accordion3" class="accordion-content w3-hide">
+          <p>Dark-eyed Juncos are ground foragers, often seen hopping and scratching in leaf litter for seeds. They are social birds, frequently forming flocks outside of breeding season. During court</p>
+        </div>
+        <button type="button" onclick="myAccordion('accordion4')" class="accordion-button w3-brown" id="accordionBtn4">diet <i class="fa fa-caret-down"></i></button>
+        <div id="accordion4" class="accordion-content w3-hide">
+          <p>Dark-eyed Juncos primarily eat seeds, especially in fall and winter, foraging on the ground for grass seeds, weed</p>
+        </div>
+        <button type="button" onclick="myAccordion('accordion5')" class="accordion-button w3-brown" id="accordionBtn5">fun facts <i class="fa fa-caret-down"></i></button>
+        <div id="accordion5" class="accordion-content w3-hide">
+          <p>Dark-eyed Juncos are often called "snowbirds" because they are commonly seen in snowy conditions. They have a distinctive "white flash" on their tail that is visible when they fly, which helps birdwatchers identify them. During courtship</p>
+        </div>
       </div>
     </div>
-
-    <div class="footer-image">
-      <img src="images/Footer/Perch-Logo-Final.png" alt="Footer Image">
-    </div>
-
-    
   </div>
+</section>
 
+<div class="btn-row" style="padding-top:0"><a href="birds.html" class="btn">back to birds</a></div>
+
+<footer class="custom-footer">
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>contact us at infobird@theperchsf.com</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="footer-image"><img src="images/Footer/Perch-Logo-Final.png" alt="The Perch logo"></div>
+  </div>
 </footer>
 
-
-<!-- JavaScript for accordion -->
-
 <script>
-// accordion begin
-      function myAccordion(id) {
-        var x = document.getElementById(id);
-        // if the accordion text is hidden, show it and change the button color to orange
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-          x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-brown", "w3-orange");
-        } else {
-          // if the accordion text is displayed, hide it and change the button color to brown
-          x.className = x.className.replace(" w3-show", "");
-          x.previousElementSibling.className =
-            x.previousElementSibling.className.replace("w3-orange", "w3-brown");
-        }
-      }
-      </script>
+// accordion: open or close a section and swap the button color
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-brown", "w3-orange");
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = x.previousElementSibling.className.replace("w3-orange", "w3-brown");
+  }
+}
+</script>
 
 </body>
 </html>
