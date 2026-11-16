@@ -1,12 +1,27 @@
-/* MY PERSONAL STYLESHEET */
-
-/* BODY */
-body {
-  font-family: "Sulphur Point", sans-serif;
-  background-color: #f8f5f0;
+/* THE PERCH SF - style.css (12-column grid, mobile-ready) */
+:root {
+  --cream: #f8f5f0;
+  --blue: #afc2e1;
+  --pale: #cfddf5;
+  --green: #8fae5a;
+  --gap: 24px;
+  --bleed: 60px;
+  --blue-h: 800px;
 }
-
-/* HEADERS */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Sulphur Point", sans-serif;
+  background: var(--cream);
+  color: #000;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 h1,
 h2,
 h3,
@@ -16,650 +31,478 @@ h6 {
   font-family: "Sulphur Point", sans-serif;
   font-weight: bold;
 }
-
-/* LOGO */
-.logo {
-  font-family: "Ultra", serif;
-  font-size: 36px;
-  letter-spacing: 2px;
-  color: #8fae5a;
-  text-decoration: none;
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0 0 20px;
 }
 
-.logo-small {
-  font-size: 0.5em; /* This makes it exactly half the size of PERCH */
-  text-transform: lowercase; /* Optional: keeps "the" lowercase */
-  vertical-align: middle; /* Optional: aligns it nicely with the larger text */
-}
-
-/* NAV BAR STYLES*/
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 60px;
-  background-color: #f8f5f0;
+  background: var(--cream);
 }
-
-/* navigation bar links */
+.logo img {
+  height: 40px;
+  width: auto;
+}
 .nav-links {
   display: flex;
   gap: 35px;
-  margin-left: 650px;
-  transform: translateY(20px);
 }
-
 .nav-links a {
-  font-family: "Sulphur Point", sans-serif;
   text-decoration: none;
-  color: black;
+  color: #000;
   font-size: 18px;
 }
-
-/* hover color for nav links */
 .nav-links a:hover {
-  color: #8fae5a;
+  color: var(--green);
 }
 
-/* nav icons (search and cart) */
-.nav-icons {
-  display: flex;
-  gap: 20px;
+/* GRID: 12 columns */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
-
-.material-symbols-outlined {
-  font-size: 26px;
-  cursor: pointer;
+.container-wide {
+  max-width: 1500px;
 }
-
-/* FOOTER STYLES*/
-
-.custom-footer {
-  background-color: #8fae5a;
-  color: white;
-  padding: 40px 60px;
-}
-
-/* footer layout */
-.footer-content {
-  display: flex;
-  justify-content: space-between;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--gap);
   align-items: center;
 }
-
-/* footer text */
-.footer-text p {
-  margin: 5px 0;
+.col-full {
+  grid-column: 1/-1;
 }
-
-.footer-links {
-  font-size: 14px;
-  opacity: 0.9;
+.col-center-wide {
+  grid-column: 2 / span 10;
 }
-
-/* footer image */
-.footer-image img {
-  width: 300px;
-  height: auto;
+.col-center-text {
+  grid-column: 3 / span 8;
 }
-
-social-icons {
-  display: flex;
-  gap: 15px;
+.col-offset-text {
+  grid-column: 3 / span 7;
 }
-
-/* HOMEPAGE STYLES*/
-
-/* hero image on homepage */
-.hero-img {
+.col-text-left {
+  grid-column: 2 / span 5;
+}
+.col-img-right {
+  grid-column: 8 / span 5;
+}
+.col-img-left {
+  grid-column: 1 / span 5;
+}
+.col-text-right {
+  grid-column: 7 / span 5;
+}
+.col-left-text {
+  grid-column: 2 / span 7;
+}
+.align-start {
+  align-items: start;
+}
+.offset-down {
+  margin-top: 130px;
+}
+.hero-parrot {
+  grid-column: 1 / span 6;
+}
+.hero-heron {
+  grid-column: 7 / span 6;
+}
+.hero-circle.big {
+  width: 85%;
+}
+.hero-circle.small {
+  width: 75%;
+}
+.hero-circle {
   width: 100%;
-  height: 900px;
-  object-fit: cover;
+}
+.hero-circle.right {
+  margin-left: auto;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.video-fill iframe {
   display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 315px;
+  border: 0;
 }
-
-/* images that overlap hero image on homepage (use later) */
-.overlap-img {
-  position: absolute;
-  top: 275px;
-  left: 100px;
+.panel-fill {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.overlap-img2 {
-  position: absolute;
-  top: 0px;
-  right: 10px;
+.plain-list {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
 }
-
-/* welcome section */
-.welcome-section {
-  max-width: 900px;
-  margin: 80px auto 80px 300px;
-  text-align: left;
-  padding: 0 80px;
-}
-
-.welcome-section h1 {
-  margin-bottom: 20px;
-}
-
-.welcome-section p {
+.plain-list li {
   font-size: 18px;
   line-height: 1.6;
+  margin-bottom: 10px;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-center-text p:last-child {
+  margin-bottom: 0;
 }
 
-/*welcome button*/
-.welcome-button {
+/* SPACING */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.about-text {
+  padding-bottom: 0;
+}
+.section-title {
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 0 24px;
+}
+.center {
+  text-align: center;
+}
+.round {
+  border-radius: 50%;
+}
+
+/* HERO (same on every page) */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(var(--blue-h) + var(--bleed));
+  background: linear-gradient(
+    to bottom,
+    var(--blue) calc(100% - var(--bleed)),
+    transparent calc(100% - var(--bleed))
+  );
+  padding: 120px 24px 0;
+  text-align: center;
+}
+.hero > :last-child {
+  margin-top: auto;
+}
+.hero > .container {
+  width: 100%;
+}
+.hero-fixed {
+  min-height: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--blue) var(--blue-h),
+    transparent var(--blue-h)
+  );
+}
+.hero-exact {
+  background: linear-gradient(
+    to bottom,
+    var(--blue) var(--blue-h),
+    transparent var(--blue-h)
+  );
+}
+.hero-explore {
+  --lift: 45px;
+  min-height: calc(var(--blue-h) + var(--bleed) - var(--lift));
+}
+.page-title {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+.page-subtitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 0 0 12px;
+}
+.hero-image {
+  width: 800px;
+  max-width: 100%;
+  margin: 32px auto 0;
+}
+.hero-image-xl {
+  width: 1000px;
+}
+.hero-text {
+  width: 100%;
+  max-width: 800px;
+  margin: 24px auto 32px;
+  text-align: left;
+}
+.home-hero {
+  width: 100%;
+  height: clamp(320px, 60vw, 900px);
+  object-fit: cover;
+}
+
+/* BUTTONS */
+.btn {
   display: inline-block;
-  margin-top: 30px;
-  margin-left: 315px;
   padding: 12px 28px;
-  background-color: #afc2e1;
-  color: black;
+  background: var(--blue);
+  color: #000;
   text-decoration: none;
   font-family: "Sulphur Point", sans-serif;
   font-size: 16px;
   border-radius: 2px;
 }
-
-/*hover color welcome button*/
-.welcome-button:hover {
-  background-color: #8fae5a;
+.btn:hover {
+  background: var(--green);
 }
-
-/* my icons on homepage (bird, binos, bridge) */
-.myicon-row {
+.btn-row {
   display: flex;
   justify-content: center;
-  gap: 150px;
-  margin: 80px 0;
+  padding: 60px 0;
 }
-
-/* icon boxes (my icon images) */
-.icon-box {
+.btn-center {
   text-align: center;
+  margin-top: 10px;
 }
-
-/* icon images */
-.icon-box img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  display: block;
-}
-
-/* buttons under myicons */
-.myicon-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #afc2e1;
-  color: black;
-  text-decoration: none;
-  font-family: "Sulphur Point", sans-serif;
-  border-radius: 2px;
-}
-
-/* hover color for icon buttons */
-.myicon-button:hover {
-  background-color: #8fae5a;
-}
-
-/* ABOUT US PAGE STYLES */
-
-.hero-blueblock-aboutus {
-  background-color: #afc2e1;
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.about-us-hero-image {
-  width: 800px;
-  height: auto;
-  position: absolute;
-  top: 215px;
-}
-
-.about-us-title {
-  position: absolute;
-  top: 120px;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.about-us-text {
-  max-width: 800px;
-  text-align: left;
-  margin-left: 375px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.about-us-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* EXPLORE PAGE STYLES */
-
-/* hero blue block */
-.hero-blueblock {
-  background-color: #afc2e1;
-  height: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* hero image on explore page */
-.explore-hero-image {
-  width: 800px;
-  height: auto;
-  position: absolute;
-  top: 150px;
-}
-
-/* explore page title */
-.explore-title {
-  position: absolute;
-  top: 120px;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-/* explore page text */
-.explore-text {
-  max-width: 400px;
-  margin: 150px 220px 50px auto;
-}
-
-.explore-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* scrolling box for explore page locations */
-.my-scrolling {
-  max-height: 600px;
-  overflow: auto;
-  padding: 20px;
-  margin: 40px 0 40px 300px;
-  width: 500px;
-
-  background-color: #afc2e1;
-  border-radius: 2px;
-}
-
-/* image carousel for explore page */
-.carousel {
-  max-width: 600px;
-  margin: 100px 300px 100px auto;
-}
-
-.mySlides {
-  width: 600px;
-  height: 400px;
-  object-fit: cover;
-  display: none;
-}
-
-/* LEARN PAGE STYLES */
-
-/* hero blue block for learn page */
-.learn-hero-blueblock {
-  background-color: #afc2e1;
-  padding: 150px 0 80px 0;
-  position: relative;
-  height: 900px;
-}
-
-/* learn page title */
-.learn-title {
-  text-align: center;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-}
-
-/* learn page text */
-.learn-text1,
-.learn-text2 {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.learn-text2 {
-  margin-top: 200px;
-}
-
-.learn-text1 p,
-.learn-text2 p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* images embedded in learn page text */
-.learn-img-left {
-  width: 300px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
-
-.learn-img-right {
-  width: 300px;
-  float: right;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  border-radius: 50%;
-}
-
-/* keeps layout from breaking w clearfix */
-.learn-text1::after,
-.learn-text2::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* learn page hyperlink to merlin website */
-.learn-link {
+.link-green {
   display: block;
   text-align: center;
-  margin-top: 15px;
-  color: #8fae5a;
+  color: var(--green);
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
 }
-
-.learn-link:hover {
+.link-green:hover {
   text-decoration: underline;
 }
 
-/* how to use binoculars section */
-.binoculars-section {
+/* HOMEPAGE ICONS */
+.icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   text-align: center;
-  margin: 150px 0 40px 0;
+}
+.icon-box img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
 
-.binoculars-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-}
-
-.binoculars-image {
-  width: 400px;
-  height: auto;
-  display: block;
-  margin: 0 auto 5px auto;
-}
-
-/* binoculars step box and list */
-.binoculars-steps {
-  background-color: #afc2e1;
-  max-width: 600px;
-  margin: 10px auto 10px auto;
+/* PANELS, IMAGES, SCROLL BOX, CAROUSEL */
+.panel {
+  background: var(--blue);
   padding: 30px 40px;
   border-radius: 2px;
 }
-
-.binoculars-steps ol {
+.panel ol,
+.panel ul {
+  margin: 0;
   padding-left: 20px;
   text-align: left;
 }
-
-.binoculars-steps li {
+.panel li {
   font-size: 17px;
   line-height: 1.6;
   margin-bottom: 12px;
 }
-
-/* link to birds page section */
-.birds-image {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 5px auto;
-}
-
-.bird-box {
-  text-align: center;
-  margin: 50px 0px 80px 0px;
-  padding: 0 80px;
-}
-
-.bird-button {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 28px;
-  background-color: #afc2e1;
-  color: black;
-  text-decoration: none;
-  font-family: "Sulphur Point", sans-serif;
-  font-size: 16px;
-  border-radius: 2px;
-}
-
-.bird-button:hover {
-  background-color: #8fae5a;
-}
-
-/* birding identification questions section */
-.questions-section {
-  background-color: #afc2e1;
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 30px 40px;
-  border-radius: 2px;
-  text-align: center;
-}
-
-.questions-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.questions-list {
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.questions-list li {
-  margin-bottom: 10px;
-}
-
-/* bottom image learn page */
-.learn-bottom-image {
-  margin: 40px 0 0 0;
-}
-
-.learn-bottom-image img {
+.img-md {
   width: 400px;
-  height: auto;
-  display: block;
   margin: 0 auto;
 }
+.img-sm {
+  width: 300px;
+  margin: 0 auto;
+}
+.scroll-box {
+  max-height: 600px;
+  overflow: auto;
+  padding: 20px;
+  background: var(--blue);
+  border-radius: 2px;
+}
+.scroll-box h6 {
+  font-size: 16px;
+  margin: 16px 0 8px;
+}
+.scroll-box p {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+.carousel {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.explore-slide {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: none;
+}
 
-/* BIRDS PAGE STYLES */
-
-.hero-blueblockbirds {
-  background-color: #afc2e1;
-  height: 900px;
+/* EXPLORE LAYOUT */
+.ex-locations {
+  grid-column: 1 / span 5;
+  grid-row: 1 / span 2;
+  position: relative;
+  align-self: stretch;
+}
+.ex-locations .scroll-box {
+  position: absolute;
+  inset: 0;
+  max-height: none;
+}
+.ex-text {
+  grid-column: 7 / span 5;
+  grid-row: 1;
+}
+.ex-carousel {
+  grid-column: 7 / span 5;
+  grid-row: 2;
+  margin-top: 16px;
+  min-width: 0;
+}
+.carousel-frame {
+  position: relative;
+}
+.scroll-carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.scroll-carousel::-webkit-scrollbar {
+  display: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background 0.2s;
+}
+.arrow:hover,
+.arrow:focus-visible {
+  background: var(--green);
+  color: #fff;
+}
+.arrow-prev {
+  left: -60px;
+}
+.arrow-next {
+  right: -60px;
+}
+.scroll-slide {
   position: relative;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  margin: 0;
 }
-
-/* hero image on birds page */
-.birds-hero-image {
-  width: 800px;
-  height: auto;
+.scroll-slide img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+.scroll-slide figcaption {
   position: absolute;
-  top: 500px;
-  margin: auto 0px 0px 350px;
-}
-
-/* birdspage title */
-.birds-title {
-  position: absolute;
-  top: 120px;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-/* birds page text */
-.birds-text {
-  max-width: 800px;
-  position: absolute;
-  top: 200px;
-}
-
-.birds-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.bird-table-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 0px;
-  margin-top: 350px;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  background: rgba(143, 174, 90, 0.85);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.scroll-slide:hover figcaption,
+.scroll-slide:focus figcaption,
+.scroll-slide:focus-within figcaption {
+  opacity: 1;
+}
+.scroll-slide figcaption {
+  pointer-events: none;
+}
+.scroll-slide a {
+  display: block;
 }
 
-/* bird table */
-.bird-table,
-.bird-table-all {
-  margin: 50px auto 100px auto;
+/* BIRDS TABLE */
+.table-wrap {
+  overflow-x: auto;
+}
+.bird-table {
+  width: 100%;
   border-collapse: collapse;
-  border-spacing: 0;
-  width: 80%;
-  display: table;
+  min-width: 720px;
 }
-
-.bird-table-header {
-  width: 80%;
-  margin: 50px auto;
-  border-collapse: collapse;
-}
-
-.bird-table-header th,
-.bird-table-header td {
-  border: 2px solid #f8f5f0;
+.bird-table th,
+.bird-table td {
+  border: 2px solid var(--cream);
   padding: 12px;
   text-align: left;
 }
-.bird-table-header th {
-  background-color: #8fae5a;
+.bird-table th {
+  background: var(--green);
   font-weight: bold;
+  cursor: pointer;
+}
+.bird-table th:hover {
+  color: #fff;
+}
+.bird-table td {
+  background: var(--pale);
+}
+.bird-table td:hover {
+  background: var(--blue);
+}
+.bird-table img {
+  width: 120px;
 }
 
-.bird-table-header td {
-  background-color: #cfddf5;
-}
-
-.bird-table-header td:hover {
-  background-color: #afc2e1;
-}
-
-.bird-table-header th:hover {
-  background-color: #8fae5a;
-  color: white;
-}
-
-/* BIRD PROFILE 1: DARK EYED JUNCO STYLES */
-
-/* hero blue block bird profile */
-.hero-blueblock-birdprofile {
-  background-color: #afc2e1;
-  height: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* hero image on bird profilepage */
-.birdprofile-hero-image {
-  width: 800px;
-  height: auto;
-  position: absolute;
-  top: 150px;
-}
-
-/* bird profile page title/subtitle */
-.birdprofile-title {
-  position: absolute;
-  top: 120px;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.birdprofile-subtitle {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  position: absolute;
-  top: 160px;
-}
-
-/* bird profile page text */
-.birdprofile-text {
-  max-width: 400px;
-  margin: 150px auto 50px 900px;
-  position: absolute;
-  top: 200px;
-}
-
-.birdprofile-text p {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-/* bird profile accordion buttons */
-
-/* w3.css styles for accordion (override) */
-
+/* ACCORDION AND VIDEOS */
 .w3-brown {
-  background-color: #afc2e1 !important;
-  color: black !important;
+  background-color: var(--blue) !important;
+  color: #000 !important;
 }
-
 .w3-orange {
-  background-color: #8fae5a !important;
-  color: black !important;
+  background-color: var(--green) !important;
+  color: #000 !important;
 }
-
-/* custom styles for accordion buttons and content */
 .accordion-container {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
-
 .accordion-button {
   display: block;
   width: 100%;
@@ -670,309 +513,308 @@ social-icons {
   border: none;
   cursor: pointer;
 }
-
+.accordion-button:hover {
+  background: var(--green);
+  color: #fff;
+}
 .accordion-content {
   padding: 15px;
-  background-color: #f8f5f0;
+  background: var(--cream);
   font-size: 18px;
 }
-
-.accordion-button:hover {
-  background-color: #8fae5a;
-  color: white;
+.accordion-image {
+  height: 300px;
+  width: auto;
+  margin: 16px auto 0;
 }
-
-/* personality of the bird section */
-
-.birdprofile-personality-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  margin-top: 100px;
-  text-align: center;
-}
-
-.birdprofile-personality {
-  max-width: 600px;
-  position: relative;
-  margin: 25px 0px 50px 450px;
-  text-align: center;
-}
-
-.birdprofile-personality p {
+.video-card h3 {
   font-size: 18px;
-  line-height: 1.6;
+  margin: 0 0 12px;
+}
+.video-card iframe {
+  width: 100%;
+  height: 315px;
+  border: 0;
 }
 
-/* youtube videos embedded in bird profile page */
-.birdprofile-video-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  margin-top: 100px;
-  text-align: center;
+/* GALLERY AND LIGHTBOX */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
-
-.birdprofile-video {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-
-/* LOCATION PROFILE PAGE 1: CRISSY FIELD STYLES */
-
-/* hero blue block location profile */
-.hero-blueblock-locationprofile {
-  background-color: #afc2e1;
-  height: 900px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-/* hero image on location profile page */
-.locationprofile-hero-image {
-  width: 900px;
-  height: auto;
-  position: absolute;
-  margin: auto 0px 0px 300px;
-  top: 300px;
-}
-
-/* location profile page title/subtitle */
-.locationprofile-title {
-  position: absolute;
-  top: 120px;
-  font-family: "Sulphur Point", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-}
-
-.locationprofile-subtitle {
-  font-size: 20px;
-  letter-spacing: 2px;
-  text-align: center;
-  position: absolute;
-  top: 160px;
-}
-
-/* location profile page text */
-.locationprofile-maintext {
-  max-width: 500px;
-  margin: 150px auto 50px 300px;
-  position: relative;
-  font-size: 18px;
-}
-
-.locationprofile-subtitle2 {
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-align: center;
-  position: relative;
-}
-
-/* location profile page bird image gallery */
-.locationprofile-bird-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 50px auto;
-  max-width: 800px;
-}
-
 .gallery-image {
-  width: 250px;
-  height: auto;
-  margin: 15px;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
   cursor: pointer;
+  transition: 0.3s;
 }
-
-/* w3 lightbox styles */
-
-/* The Modal (background) */
+.hover-shadow:hover {
+  box-shadow:
+    0 8px 8px 0 var(--blue),
+    0 10px 20px 0 var(--blue);
+}
 .modal {
   display: none;
   position: fixed;
   z-index: 1000;
-  padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #8fae5a;
-  background-color: rgba(143, 174, 90, 0.9);
+  background: rgba(143, 174, 90, 0.9);
+  padding-top: 60px;
 }
-
-/* Modal Content */
 .modal-content {
   position: relative;
-  background-color: none;
-  margin: auto 300px auto 500px;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
-
-/* The Close Button */
 .close {
-  color: white;
   position: absolute;
-  top: 10px;
-  right: 25px;
+  top: -45px;
+  right: 20px;
+  color: #fff;
   font-size: 35px;
   font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #afc2e1;
-  text-decoration: none;
   cursor: pointer;
+  background: none;
+  border: none;
 }
-
-.mySlides {
+.close:hover {
+  color: var(--blue);
+}
+.lightbox-slide {
   display: none;
 }
-
-.mySlides img {
-  display: block;
+.lightbox-slide img {
   margin: auto;
-  width: 500px;
-  height: 500px;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
+  max-height: 65vh;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-  margin-right: 600px;
+  object-fit: contain;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* hover */
-.prev:hover,
-.next:hover {
-  background-color: #afc2e1;
-}
-
-/* Number text (1/3 etc) */
 .numbertext {
-  color: white;
-  font-size: 12px;
-  padding: 8px 12px;
   position: absolute;
   top: 0;
-  margin: auto 500px;
+  left: 16px;
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
 }
-
-img {
-  margin-bottom: -4px;
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  padding: 16px;
+  color: #fff;
+  font-size: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
 }
-
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+.prev:hover,
+.next:hover {
+  background: var(--blue);
+}
 .caption-container {
   text-align: center;
-  background-color: #afc2e1;
+  background: var(--blue);
+  color: #fff;
   padding: 10px;
-  color: white;
-  margin: 100px 650px 0 auto;
-  width: 100%;
   max-width: 500px;
+  margin: 16px auto 0;
 }
-
+.caption-container p {
+  margin: 0;
+}
+a.caption-container {
+  display: block;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+a.caption-container:hover,
+a.caption-container:focus-visible {
+  background: var(--green);
+}
+.col-hero {
+  grid-column: 1/-1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.intro-text {
+  max-width: 600px;
+}
+.thumb-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
 .demo {
+  width: 90px;
   opacity: 0.6;
+  cursor: pointer;
 }
-
-.active,
-.demo:hover {
+.demo:hover,
+.demo.active {
   opacity: 1;
 }
 
-img.hover-shadow {
-  transition: 0.3s;
+/* HISTORY BLOCK */
+.history-block {
+  background: var(--blue);
+  padding: 50px;
+}
+.history-block p:last-child {
+  margin-bottom: 0;
 }
 
-.hover-shadow:hover {
-  box-shadow:
-    0 8px 8px 0 #afc2e1,
-    0 10px 20px 0 #afc2e1;
+/* FOOTER */
+.custom-footer {
+  background: var(--green);
+  color: #fff;
+  padding: 28px 60px;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: none;
-  width: 30%;
-}
-
-.row {
+.footer-content {
   display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin: 150px 10px 100px 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-text p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+.footer-image img {
+  width: 220px;
 }
 
-/* location history section */
-.location-history-title {
-  font-size: 22px;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.location-history-blue-block {
-  background-color: #afc2e1;
-  max-width: 900px;
-  margin: 15px auto 50px auto;
-  text-align: left;
-  padding: 50px 50px;
-}
-
-.location-history-text {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.location-history-blue-block p {
-  margin: 0;
+/* PHONES */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .nav-links {
+    gap: 14px;
+  }
+  .nav-links a {
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+  .grid > * {
+    grid-column: 1/-1;
+  }
+  .ex-locations,
+  .ex-text,
+  .ex-carousel {
+    grid-row: auto;
+  }
+  .ex-locations {
+    position: static;
+  }
+  .ex-locations .scroll-box {
+    position: static;
+    max-height: 420px;
+  }
+  .hero-explore {
+    --lift: 0px;
+  }
+  .arrow-prev {
+    left: 8px;
+  }
+  .arrow-next {
+    right: 8px;
+  }
+  .mobile-first {
+    order: -1;
+  }
+  .offset-down {
+    margin-top: 0;
+  }
+  .hero-circle.big,
+  .hero-circle.small {
+    width: 100%;
+  }
+  .video-fill iframe {
+    height: 220px;
+    min-height: 0;
+  }
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .about-text {
+    padding-bottom: 0;
+  }
+  :root {
+    --bleed: 40px;
+    --blue-h: 480px;
+  }
+  .hero {
+    padding: 100px 16px 0;
+  }
+  .hero-fixed {
+    min-height: 0;
+    background: linear-gradient(
+      to bottom,
+      var(--blue) calc(100% - var(--bleed)),
+      transparent calc(100% - var(--bleed))
+    );
+  }
+  .panel {
+    padding: 24px 20px;
+  }
+  .history-block {
+    padding: 28px 20px;
+  }
+  .video-card iframe {
+    height: 220px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .custom-footer {
+    padding: 24px 20px;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer-image img {
+    width: 180px;
+  }
 }

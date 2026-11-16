@@ -1,177 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Perch SF</title>
+<title>Birds | The Perch SF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/w3.css">
 <link rel="stylesheet" href="css/style.css">
-
-<!--google font links -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
-<!-- font awesome icons link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<!-- THIS IS THE BIRDS PAGE  -->
 </head>
-
 <body>
-
-<!-- Navbar (sit on top) -->
 <header class="w3-top">
   <div class="navbar">
-
-    <a href="index.html" class="logo">The Perch</a>
-
-    <!-- learn and explore pages linked-->
+    <a href="index.html" class="logo"><img src="images/Header/Perch-Logo-Header.png" alt="the PERCH logo"></a>
     <div class="nav-links">
       <a href="about-us.html">about Us</a>
       <a href="learn.html">learn</a>
       <a href="explore.html">explore</a>
     </div>
-
-    <div class="nav-icons">
-      <span class="material-symbols-outlined">search</span>
-      <span class="material-symbols-outlined">shopping_cart</span>
-    </div>
-
   </div>
 </header>
 
-<!-- blue block background and birds page text -->
-<header class="hero-blueblockbirds">
-  <h1 class="birds-title">BIRDS</h1>
-  <main class="birds-text">
-  <p>
-    Our Bird Species pages celebrate the rich birdlife of San Francisco, from coastal shorebirds to park-dwelling songbirds and backyard regulars. Each profile includes quick identification tips, seasonal presence in the city, and the best local places to spot them — along with a curated playlist the bird might love, a poem that captures its personality, and videos that bring its behavior to life. It’s part field guide, part art project, and all about deepening your connection to the wild birds that share our city.
-  </p>
-</main>
-</header>
+<section class="hero">
+  <h1 class="page-title">BIRDS</h1>
+  <div class="hero-text">
+    <p>Our Bird Species pages celebrate the rich birdlife of San Francisco, from coastal shorebirds to park-dwelling songbirds and backyard regulars. Each profile includes quick identification tips, seasonal presence in the city, and the best local places to spot them — along with a curated playlist the bird might love, a poem that captures its personality, and videos that bring its behavior to life. It’s part field guide, part art project, and all about deepening your connection to the wild birds that share our city.</p>
+  </div>
+  <img src="images/Birds/birdshero.png" class="hero-image" alt="Illustration of San Francisco birds">
+</section>
 
-<!-- birds page hero image -->
-<div>
-  <img src="images/Birds/birdshero.png" class="birds-hero-image">
-</div>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">bird species in San Francisco</h2>
+    <div class="table-wrap">
+      <table id="myTable" class="bird-table">
+        <thead>
+          <tr><th>IMAGE</th><th>SPECIES</th><th>SCIENTIFIC NAME</th><th>TYPE/GROUP</th><th>HABITAT</th><th>LOCATIONS</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><img src="images/Birds/annasmini.png" alt="Anna’s Hummingbird"></td>
+          <td>Anna’s Hummingbird</td>
+          <td>Calypte anna</td>
+          <td>urban &amp; park</td>
+          <td>Urban gardens, parks, coastal scrub, and residential neighborhoods</td>
+          <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+        </tr>
+        <tr>
+          <td><img src="images/Birds/juncomini.png" alt="Dark-eyed Junco"></td>
+          <td><a href="bprofile-dark-eyed-junco.html">Dark-eyed Junco</a></td>
+          <td>Junco hyemalis</td>
+          <td>urban &amp; park</td>
+          <td>Urban gardens, parks, and residential neighborhoods</td>
+          <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+        </tr>
+        <tr>
+          <td><img src="images/Birds/gullmini.png" alt="Western Gull"></td>
+          <td>Western Gull</td>
+          <td>Larus occidentalis</td>
+          <td>coastal &amp; waterfront</td>
+          <td>Coastal areas, beaches, and marine environments</td>
+          <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+        </tr>
+        <tr>
+          <td><img src="images/Birds/heronmini.png" alt="Great Blue Heron"></td>
+          <td>Great Blue Heron</td>
+          <td>Ardea herodias</td>
+          <td>coastal &amp; wetland</td>
+          <td>Coastal areas, wetlands, and marshes</td>
+          <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+        </tr>
+        <tr>
+          <td><img src="images/Birds/warblermini.png" alt="Yellow-rumped Warbler"></td>
+          <td>Yellow-rumped Warbler</td>
+          <td>Setophaga coronata</td>
+          <td>urban &amp; park</td>
+          <td>Urban gardens, parks, and residential neighborhoods</td>
+          <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-<!-- birds page table title -->
-<div>
-  <h2 class="bird-table-title">bird species in San Francisco</h2>
-</div>
-
-<!-- birds table -->
- <table id="myTable" class="bird-table-all">
-            <thead>
-              <tr class="bird-table-header">
-                <th>IMAGE</th>
-                <th>SPECIES</th>
-                <th>TYPE/GROUP</th>
-                <th>SCIENTIFIC NAME</th>
-                <th>HABITAT</th>
-                <th>LOCATIONS</th>
-              </tr>
-            </thead>
-            <tr class="bird-table-header">
-              <td><img src="./images/Birds/annasmini.png" style="width: 120px" /></td>
-              <td>Anna's Hummingbird</td>
-              <td>Calypte anna</td>
-              <td>urban & park</td>
-              <td>Urban gardens, parks, coastal scrub, and residential neighborhoods</td>
-              <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
-            </tr>
-            <tr class="bird-table-header">
-              <td>
-                <img src="./images/Birds/juncomini.png" style="width: 120px" />
-              </td>
-              <td><a href="bprofile-dark-eyed-junco.html">Dark-eyed Junco</a></td>
-              <td>Junco hyemalis</td>
-              <td>urban & park</td>
-              <td>Urban gardens, parks, and residential neighborhoods</td>
-              <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
-            </tr>
-            <tr class="bird-table-header">
-              <td><img src="./images/Birds/gullmini.png" style="width: 120px" /></td>
-              <td>Western Gull</td>
-              <td>Larus occidentalis</td>
-              <td>coastal & waterfront</td>
-              <td>Coastal areas, beaches, and marine environments</td>
-              <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
-            </tr>
-            <tr class="bird-table-header">
-              <td>
-                <img src="./images/Birds/heronmini.png" style="width: 120px" />
-              </td>
-              <td>Great Blue Heron</td>
-              <td>Ardea herodias</td>
-              <td>coastal & wetland</td>
-              <td>Coastal areas, wetlands, and marshes</td>
-              <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
-            </tr>
-            <tr class="bird-table-header">
-              <td><img src="./images/Birds/warblermini.png" style="width: 120px" /></td>
-              <td>yellow-rumped warbler</td>
-              <td>Setophaga petechia</td>
-              <td>urban & park</td>
-              <td>Urban gardens, parks, and residential neighborhoods</td>
-              <td>Golden Gate Park, the Presidio, <a href="lprofile-crissy-field.html">Crissy Field</a>, Lands End, Lake Merced, and in residential gardens throughout the city.</td>
-            </tr>
-          </table>
-
- <!-- Footer -->
 <footer class="custom-footer">
-
   <div class="footer-content">
-    
     <div class="footer-text">
-      <p>© 2026 The Perch. All rights reserved.</p>
-      <p class="footer-links">Privacy Policy | Terms of Use</p>
-      <br>
-      <p> contact us at infobird@theperchsf.com</p>
-                  <br>
+      <p>contact us at infobird@theperchsf.com</p>
       <p>Follow us on social media:</p>
-            <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
       </div>
     </div>
-
-    <div class="footer-image">
-      <img src="images/Footer/Perch-Logo-Final.png" alt="Footer Image">
-    </div>
-
+    <div class="footer-image"><img src="images/Footer/Perch-Logo-Final.png" alt="The Perch logo"></div>
   </div>
-
 </footer>
 
-<!-- jQuery and tablesorter scripts for birds table -->
- 
-      
-      <script
-      type="text/JavaScript"
-      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ></script>
-    <script
-      type="text/JavaScript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
-    ></script>
-
-    <script>
-      // sortable table begin
-      $(document).ready(function () {
-        $("table#myTable").tablesorter({
-          sortList: [
-            [2, 1],
-          ] /* 1st number - column to sort, 2nd number - asending (2) or descending order (1) */,
-          CssAsc: "tablesorter-headerAsc",
-          CssDesc: "tablesorter-headerDesc",
-        });
-      });
-      // sortable table end
-    </script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+<script>
+// sortable table (column 2 = scientific name, 1 = descending)
+$(document).ready(function () {
+  $("table#myTable").tablesorter({ sortList: [[2, 1]] });
+});
+</script>
 </body>
 </html>

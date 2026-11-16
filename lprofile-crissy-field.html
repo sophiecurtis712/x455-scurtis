@@ -1,227 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Perch SF</title>
+<title>Crissy Field | The Perch SF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/w3.css">
 <link rel="stylesheet" href="css/style.css">
-
-<!-- google fonts links  -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
-<!-- font awesome icons link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<!-- THIS IS THE LOCATION PROFILE PAGE (Crissy Field)  -->
 </head>
-
 <body>
 
-<!-- Navbar (sit on top) -->
+<!-- THIS IS THE LOCATION PROFILE PAGE (Crissy Field) -->
 <header class="w3-top">
   <div class="navbar">
-
-    <a href="index.html" class="logo">The Perch</a>
-
-    <!-- learn and explore pages linked, no about page linked -->
+    <a href="index.html" class="logo"><img src="images/Header/Perch-Logo-Header.png" alt="the PERCH logo"></a>
     <div class="nav-links">
       <a href="about-us.html">about Us</a>
       <a href="learn.html">learn</a>
       <a href="explore.html">explore</a>
     </div>
-
-    <div class="nav-icons">
-      <span class="material-symbols-outlined">search</span>
-      <span class="material-symbols-outlined">shopping_cart</span>
-    </div>
-
   </div>
 </header>
 
-<!-- blue block background and title/subtitle -->
-<header class="hero-blueblock-locationprofile">
-  <h1 class="locationprofile-title">LOCATION PROFILE:</h1>
-  <h2 class="locationprofile-subtitle">Crissy Field</h2>
-</header>
+<section class="hero hero-exact">
+  <h1 class="page-title">LOCATION PROFILE:</h1>
+  <h2 class="page-subtitle">Crissy Field</h2>
+  <img src="images/Location-Profiles/Crissy-Field/CrissyFieldHero.png" class="hero-image" style="width:900px" alt="Illustration of Crissy Field">
+</section>
 
-  <!-- Location profile hero image -->
-    <img src="images/Location-Profiles/Crissy-Field/CrissyFieldHero.png" class="locationprofile-hero-image" alt="Location Profile Hero Image">
-
-<!-- Location profile main text -->
-  <main class="locationprofile-maintext">
-  <p>
-    Crissy Field is one of the best and most accessible birding spots in San Francisco, where restored tidal marsh meets sandy beach along the Golden Gate. Its mix of lagoon, shoreline, open water, and grassy areas attracts a wide variety of birds year-round, from shorebirds and waterfowl to raptors and seabirds.
-  </p>
-  <p>
-Birders can spot species like Brown Pelican gliding over the Bay, Western Gull along the beach, and waders such as Great Blue Heron hunting in the marsh. Migration seasons—especially fall and spring—bring even more diversity, making it a reliable and scenic destination for both beginners and experienced birders.
-  </p>
-</main>
-
-<!-- subtitle for bird gallery -->
-<div class="locationprofile-subtitle2">
-  <h3>common birds at Crissy Field</h3>
-</div>
-
-<!-- Bird lightbox gallery-->
-<div class="locationprofile-bird-gallery">
-  <img src="images/Location-Profiles/Crissy-Field/BrownPelican.png" class="gallery-image hover-shadow cursor" alt="Brown Pelican" onclick="openModal();currentSlide(1)">
-  <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png" class="gallery-image hover-shadow cursor" alt="Great Blue Heron" onclick="openModal();currentSlide(2)">
-  <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png" class="gallery-image hover-shadow cursor" alt="California Gull" onclick="openModal();currentSlide(3)">
-  <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png" class="gallery-image hover-shadow cursor" alt="Anna's Hummingbird" onclick="openModal();currentSlide(4)">
-  <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png" class="gallery-image hover-shadow cursor" alt="Double-Crested Cormorant" onclick="openModal();currentSlide(5)">
-  <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png" class="gallery-image hover-shadow cursor" alt="Belted Kingfisher" onclick="openModal();currentSlide(6)">
-</div>
-
-<div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-
-    <div class="mySlides">
-      <div class="numbertext">1 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/BrownPelican-big.png">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png">
-    </div>
-    
-    <div class="mySlides">
-      <div class="numbertext">4 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png">
-    </div>
-
-      <div class="mySlides">
-      <div class="numbertext">5 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png">
-    </div>
-
-      <div class="mySlides">
-      <div class="numbertext">6 / 6</div>
-      <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png">
-    </div>
-    
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-
-<div class="row">
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/BrownPelican-sm.png" style="width: 33%;" onclick="currentSlide(1)" alt="Brown Pelican">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/GreatBlueHeron-sm.png" style="width: 33%;" onclick="currentSlide(2)" alt="Great Blue Heron">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/CaliforniaGull-sm.png" style="width: 33%;" onclick="currentSlide(3)" alt="California Gull">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/AnnasHummingbird-sm.png" style="width: 33%;" onclick="currentSlide(4)" alt="Anna's Hummingbird">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant-sm.png" style="width: 33%;" onclick="currentSlide(5)" alt="Double-Crested Cormorant">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/Location-Profiles/Crissy-Field/BeltedKingfisher-sm.png" style="width: 33%;" onclick="currentSlide(6)" alt="Belted Kingfisher">
-    </div>
-  </div>
-</div>
-
-<br>
-
-<!-- location history section -->
-<div class="location-history-blue-block">
-  <h2 class="location-history-title">brief history of Crissy Field</h2>
-  <p class="location-history-text">
-    Crissy Field began as a tidal marsh and shoreline along the northern edge of the San Francisco Peninsula, used for centuries by Indigenous Ohlone peoples. In the early 1900s, the marsh was filled and transformed into an airfield for the U.S. Army. Named in 1921 after Major Dana H. Crissy, it became an important military aviation site within the Presidio, serving as a training and testing ground for early flight on the West Coast.
-  </p>
-  <br>
-  <p class="location-history-text">
-  By the late 20th century, the airfield had fallen into disuse. In the early 2000s, a major restoration project removed pavement, restored tidal wetlands, and reconnected the area to the Bay. Today, Crissy Field is part of the Golden Gate National Recreation Area and stands as one of the country’s most successful urban habitat restoration projects — transforming a former military base into a vibrant public park and thriving bird habitat.
-  </p>
-</div>
-
-<br>
-
- <!-- Footer -->
-<footer class="custom-footer">
-
-  <div class="footer-content">
-    
-    <div class="footer-text">
-      <p>© 2026 The Perch. All rights reserved.</p>
-      <p class="footer-links">Privacy Policy | Terms of Use</p>
-      <br>
-      <p> contact us at infobird@theperchsf.com</p>
-      <br>
-      <p>Follow us on social media:</p>
-            <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
+<section class="section">
+  <div class="container grid">
+    <div class="col-hero">
+      <div class="intro-text">
+      <p>Crissy Field is one of the best and most accessible birding spots in San Francisco, where restored tidal marsh meets sandy beach along the Golden Gate. Its mix of lagoon, shoreline, open water, and grassy areas attracts a wide variety of birds year-round, from shorebirds and waterfowl to raptors and seabirds.</p>
+      <p>Birders can spot species like Brown Pelican gliding over the Bay, Western Gull along the beach, and waders such as Great Blue Heron hunting in the marsh. Migration seasons—especially fall and spring—bring even more diversity, making it a reliable and scenic destination for both beginners and experienced birders.</p>
       </div>
     </div>
-
-    <div class="footer-image">
-      <img src="images/Footer/Perch-Logo-Final.png" alt="Footer Image">
-    </div>
-
   </div>
+</section>
 
+<section class="section" style="padding-top:0">
+  <div class="container grid">
+    <div class="col-hero">
+      <h3 class="section-title">common birds at Crissy Field</h3>
+      <div class="gallery">
+        <img src="images/Location-Profiles/Crissy-Field/BrownPelican.png" class="gallery-image hover-shadow" alt="Brown Pelican" onclick="openModal();currentSlide(1)">
+        <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png" class="gallery-image hover-shadow" alt="Great Blue Heron" onclick="openModal();currentSlide(2)">
+        <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png" class="gallery-image hover-shadow" alt="California Gull" onclick="openModal();currentSlide(3)">
+        <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png" class="gallery-image hover-shadow" alt="Anna's Hummingbird" onclick="openModal();currentSlide(4)">
+        <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png" class="gallery-image hover-shadow" alt="Double-Crested Cormorant" onclick="openModal();currentSlide(5)">
+        <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png" class="gallery-image hover-shadow" alt="Belted Kingfisher" onclick="openModal();currentSlide(6)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <button class="close" type="button" aria-label="Close" onclick="closeModal()">&times;</button>
+      <div class="lightbox-slide">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/BrownPelican-big.png" alt="Brown Pelican">
+      </div>
+      <div class="lightbox-slide">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/GreatBlueHeron.png" alt="Great Blue Heron">
+      </div>
+      <div class="lightbox-slide">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/CaliforniaGull.png" alt="California Gull">
+      </div>
+      <div class="lightbox-slide">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/AnnasHummingbird.png" alt="Anna's Hummingbird">
+      </div>
+      <div class="lightbox-slide">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant.png" alt="Double-Crested Cormorant">
+      </div>
+      <div class="lightbox-slide">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/Location-Profiles/Crissy-Field/BeltedKingfisher.png" alt="Belted Kingfisher">
+      </div>
+    <button class="prev" type="button" aria-label="Previous bird" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" type="button" aria-label="Next bird" onclick="plusSlides(1)">&#10095;</button>
+    <a id="caption" class="caption-container" href="#"></a>
+    <div class="thumb-row">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/BrownPelican-sm.png" onclick="currentSlide(1)" alt="Brown Pelican" data-page="bprofile-brown-pelican.html">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/GreatBlueHeron-sm.png" onclick="currentSlide(2)" alt="Great Blue Heron" data-page="bprofile-great-blue-heron.html">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/CaliforniaGull-sm.png" onclick="currentSlide(3)" alt="California Gull" data-page="bprofile-california-gull.html">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/AnnasHummingbird-sm.png" onclick="currentSlide(4)" alt="Anna's Hummingbird" data-page="bprofile-annas-hummingbird.html">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/DoubleCrestedCormorant-sm.png" onclick="currentSlide(5)" alt="Double-Crested Cormorant" data-page="bprofile-double-crested-cormorant.html">
+        <img class="demo" src="images/Location-Profiles/Crissy-Field/BeltedKingfisher-sm.png" onclick="currentSlide(6)" alt="Belted Kingfisher" data-page="bprofile-belted-kingfisher.html">
+    </div>
+  </div>
+</div>
+
+<section class="section" style="padding-top:0">
+  <div class="container grid">
+    <div class="col-hero">
+      <div class="history-block">
+        <h2 class="section-title">brief history of Crissy Field</h2>
+        <p>Crissy Field began as a tidal marsh and shoreline along the northern edge of the San Francisco Peninsula, used for centuries by Indigenous Ohlone peoples. In the early 1900s, the marsh was filled and transformed into an airfield for the U.S. Army. Named in 1921 after Major Dana H. Crissy, it became an important military aviation site within the Presidio, serving as a training and testing ground for early flight on the West Coast.</p>
+        <p>By the late 20th century, the airfield had fallen into disuse. In the early 2000s, a major restoration project removed pavement, restored tidal wetlands, and reconnected the area to the Bay. Today, Crissy Field is part of the Golden Gate National Recreation Area and stands as one of the country’s most successful urban habitat restoration projects — transforming a former military base into a vibrant public park and thriving bird habitat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="custom-footer">
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>contact us at infobird@theperchsf.com</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="footer-image"><img src="images/Footer/Perch-Logo-Final.png" alt="The Perch logo"></div>
+  </div>
 </footer>
 
 <script>
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
+// lightbox
 var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
+function openModal() { document.getElementById("myModal").style.display = "block"; }
+function closeModal() { document.getElementById("myModal").style.display = "none"; }
+function plusSlides(n) { showSlides(slideIndex += n); }
+function currentSlide(n) { showSlides(slideIndex = n); }
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("lightbox-slide");
   var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  if (n > slides.length) { slideIndex = 1; }
+  if (n < 1) { slideIndex = slides.length; }
+  for (var i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+  for (var j = 0; j < dots.length; j++) { dots[j].className = dots[j].className.replace(" active", ""); }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  var cap = document.getElementById("caption");
+  cap.textContent = dots[slideIndex - 1].alt;
+  cap.href = dots[slideIndex - 1].getAttribute("data-page");
 }
+showSlides(slideIndex);
+document.addEventListener("keydown", function (e) {
+  if (document.getElementById("myModal").style.display !== "block") { return; }
+  if (e.key === "Escape") { closeModal(); }
+  if (e.key === "ArrowLeft") { plusSlides(-1); }
+  if (e.key === "ArrowRight") { plusSlides(1); }
+});
 </script>
-    
+
 </body>
 </html>

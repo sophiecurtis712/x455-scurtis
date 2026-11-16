@@ -1,184 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>The Perch SF</title>
+<title>Explore | The Perch SF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/css/w3.css">
 <link rel="stylesheet" href="css/style.css">
-
-<!-- google font links -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&family=Ultra&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
-
-<!-- font awesome icons link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-<!-- THIS IS THE EXPLORE PAGE  -->
 </head>
-
 <body>
-
-<!-- Navbar (sit on top) -->
 <header class="w3-top">
   <div class="navbar">
-
-     <a href="index.html" class="logo">The Perch</a>
-
-   <div class="nav-links">
+    <a href="index.html" class="logo"><img src="images/Header/Perch-Logo-Header.png" alt="the PERCH logo"></a>
+    <div class="nav-links">
       <a href="about-us.html">about Us</a>
       <a href="learn.html">learn</a>
       <a href="explore.html">explore</a>
     </div>
-
-    <div class="nav-icons">
-      <span class="material-symbols-outlined">search</span>
-      <span class="material-symbols-outlined">shopping_cart</span>
-    </div>
-
   </div>
 </header>
 
-<!-- blue block background and hero image -->
-<header class="hero-blueblock">
-  <h1 class="explore-title">EXPLORE</h1>
-  <img src="images/Explorepage/Stampsfmap.png" class="explore-hero-image">
-</header>
-
-<!-- Explore page text -->
-<main class="explore-text">
-  <p>
-    San Francisco may be small, but its habitats are wildly diverse: ocean cliffs, bay wetlands, wooded parks, and open grasslands all within a few miles.
-    Where the landscape shifts, birds do too. Shorebirds along the Bay, seabirds on the Pacific, hawks overhead, songbirds in the trees.
-  </p>
-  <p>
-    This page highlights general areas in San Francisco where birding is consistently good. Pick a place, wander a little, and see what you find.
-  </p>
-</main>
-
-
-<!-- need to add scrolling text of locations in city and photo gallery at bottom of locations with captions and hover features. -->
-<section class="my-scrolling">
-  <h4 style="text-align: center;">birding locations</h4>
-  <br>
-  <h6>Shoreline and Ocean</h6>
-  <p><a href="lprofile-crissy-field.html">Crissy Field</a></p>
-  <p>Lands End</p>
-  <p>Ocean Beach</p>
-  <p>Marina Green</p>
-  <p>Fort Funston</p>
-<br>
-  <h6>Bay and Wetlands</h6>
-  <p>Bay Trail</p>
-  <p>Heron’s Head Park</p>
-  <p>Glen Canyon Park</p>
-  <p>McLaren Park</p>
-  <p>Lake Merced</p>
-<br>
-  <h6>Wooded Parks</h6>
-  <p>Golden Gate Park</p>
-  <p>Presidio</p>
-  <p>Lincoln Park</p>
-  <p>Esprit Park</p>
-  <p>Forest Knolls</p>
-<br>
-  <h6>Grasslands</h6>
-  <p>Corona Heights</p>
-  <p>Bernal Heights</p>
-  <p>Buena Vista Park</p>
-  <p>Mission Dolores Park</p>
-  <p>Alamo Square</p>
+<section class="hero hero-exact hero-explore">
+  <h1 class="page-title">EXPLORE</h1>
+  <img src="images/Explorepage/map.png" class="hero-image" alt="Map of San Francisco">
 </section>
 
-<!-- image gallery of locations -->
-<section class="carousel">
+<section class="section">
+  <div class="container grid align-start">
+    <div class="ex-text">
+      <p>San Francisco may be small, but its habitats are wildly diverse: ocean cliffs, bay wetlands, wooded parks, and open grasslands all within a few miles. Where the landscape shifts, birds do too. Shorebirds along the Bay, seabirds on the Pacific, hawks overhead, songbirds in the trees.</p>
+      <p>This page highlights general areas in San Francisco where birding is consistently good. Pick a place, wander a little, and see what you find.</p>
+    </div>
 
-  <img class="mySlides" src="images/Explorepage/crissyfieldexplore.png">
-  <img class="mySlides" src="images/Explorepage/landsendexplore.png">
-  <img class="mySlides" src="images/Explorepage/oceanbeachexplore.png">
-
-</section>
-
-
-
- <!-- Footer -->
-<footer class="custom-footer">
-
-  <div class="footer-content">
-    
-    <div class="footer-text">
-      <p>© 2026 The Perch. All rights reserved.</p>
-      <p class="footer-links">Privacy Policy | Terms of Use</p>
-      <br>
-      <p> contact us at infobird@theperchsf.com</p>
-                  <br>
-      <p>Follow us on social media:</p>
-            <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter" style="color: rgb(255, 255, 255);"></i></a>
-        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(255, 255, 255);"></i></a>
+    <div class="ex-locations">
+      <div class="scroll-box">
+        <h4 style="text-align:center;margin:0 0 16px">Birding Locations</h4>
+        <h6>Shoreline and Ocean</h6>
+        <p><a href="lprofile-crissy-field.html">Crissy Field</a></p>
+        <p>Lands End</p><p>Ocean Beach</p><p>Marina Green</p><p>Fort Funston</p>
+        <br>
+        <h6>Bay and Wetlands</h6>
+        <p>Bay Trail</p><p>Heron’s Head Park</p><p>Glen Canyon Park</p><p>McLaren Park</p><p>Lake Merced</p>
+        <br>
+        <h6>Wooded Parks</h6>
+        <p>Golden Gate Park</p><p>Presidio</p><p>Lincoln Park</p><p>Esprit Park</p><p>Forest Knolls</p>
+        <br>
+        <h6>Grasslands</h6>
+        <p>Corona Heights</p><p>Bernal Heights</p><p>Buena Vista Park</p><p>Mission Dolores Park</p><p>Alamo Square</p>
       </div>
     </div>
 
-    <div class="footer-image">
-      <img src="images/Footer/Perch-Logo-Final.png" alt="Footer Image">
+    <div class="ex-carousel">
+      <div class="carousel-frame">
+        <button class="arrow arrow-prev" type="button" aria-label="Previous photo">&#10094;</button>
+        <div class="scroll-carousel">
+          <figure class="scroll-slide" tabindex="0">
+            <a href="lprofile-crissy-field.html"><img src="images/Explorepage/crissyfieldexplore.png" alt="Crissy Field"></a>
+            <figcaption>Crissy Field</figcaption>
+          </figure>
+          <figure class="scroll-slide" tabindex="0">
+            <img src="images/Explorepage/landsendexplore.png" alt="Lands End">
+            <figcaption>Lands End</figcaption>
+          </figure>
+          <figure class="scroll-slide" tabindex="0">
+            <img src="images/Explorepage/oceanbeachexplore.png" alt="Ocean Beach">
+            <figcaption>Ocean Beach</figcaption>
+          </figure>
+        </div>
+        <button class="arrow arrow-next" type="button" aria-label="Next photo">&#10095;</button>
+      </div>
     </div>
-
   </div>
+</section>
 
+<footer class="custom-footer">
+  <div class="footer-content">
+    <div class="footer-text">
+      <p>contact us at infobird@theperchsf.com</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </div>
+    <div class="footer-image"><img src="images/Footer/Perch-Logo-Final.png" alt="The Perch logo"></div>
+  </div>
 </footer>
 
-<!-- JAVASCRIPT  -->
 
 <script>
-// carousel slideshow begin
-var slideIndex = 1;
-      var myIndex = 0;
-      carousel();
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000); // Change image every 4 seconds
-      }
+// carousel arrows: scroll one photo at a time, wrapping around at the ends
+var strip = document.querySelector(".scroll-carousel");
+function slide(dir) {
+  var step = strip.clientWidth + 16;
+  var atEnd = strip.scrollLeft + strip.clientWidth >= strip.scrollWidth - 5;
+  if (dir > 0 && atEnd) { strip.scrollTo({ left: 0, behavior: "smooth" }); }
+  else if (dir < 0 && strip.scrollLeft <= 5) { strip.scrollTo({ left: strip.scrollWidth, behavior: "smooth" }); }
+  else { strip.scrollBy({ left: dir * step, behavior: "smooth" }); }
+}
+document.querySelector(".arrow-prev").addEventListener("click", function () { slide(-1); });
+document.querySelector(".arrow-next").addEventListener("click", function () { slide(1); });
+</script>
 
-      // slideshow - carousel
-      // hook each carousel button
-      function currentDiv(n) {
-        showDivs((slideIndex = n));
-        myIndex = n;
-      }
-
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = x.length;
-        }
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-        }
-        x[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " w3-opacity-off";
-      }
-      // carousel slideshow end
-      </script>
-
-        </body>
+</body>
 </html>
